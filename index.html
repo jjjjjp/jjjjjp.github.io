@@ -21,21 +21,142 @@ body {
 	text-align: center;
 }
 
+h1, h2, h3, h4, p, ul, ol, dl, dd, dt, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 #pagewrapper {
 	width: calc(100%-48px);
+	min-width: 375px;
 	text-align: left;
 	margin: 0 auto;
-	padding: 0 48px;
+	padding: 28px 48px;
+}
+
+.redsquare {
+	background: rgb(226,0,26);
+	color: rgb(225,223,210);
+	padding: 28px 48px;
+	margin: 24px auto;
+/*	column-count: 3;
+	column-gap: 20px;*/
+}
+
+.photos {
+	column-count: 3;
+	column-gap: 20px;
+	width: 100%;
+}
+
+.card {
+	break-inside: avoid;
+}
+
+.sidelinks {
+	color: rgb(225,223,210);
+	display: block;
+	border: 2px solid rgb(225,223,210);
+	border-radius: 2em;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	display: table;
+
+}
+
+th, tr, td {
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+
+td {
+	display: table-cell;
+}
+
+tr {
+	display: table-row;
+}
+
+#firstcol, #thirdcol {
+	width: 24%;
+}
+
+#secondcol {
+	width: calc(100%-48%);
+}
+
+#errer {
+	margin: 48px auto;
+}
 </style>
 
 </head>
 
 <body>
 <div id="pagewrapper">
-	<h1>crying<br>on the bathroom<br><span style="padding-left: 5.8em;">floor</span></h1>
+		<h1>crying<br>on the bathroom<br><span style="padding-left: 5.8em;">floor</span></h1>
 	<div>
-		
+		<p>chatting <br>with Bing AI</p>
 	</div>
+	
+	<div id="errer">
+		<div>
+			<h3>zine 001</h3>
+			<div>
+				<p>crying on the bathroom floor</p>
+				<p>miek’s favourite lyrics as seen by Bing AI powered by ChatGPT-4.</p>
+				<p>april 1, 2023</p>
+			</div>
+			<ul>
+				<li><a href="issues/2023/04/Miek — Zine — No. 01 — 2023–04–01 (s-size).pdf">download current issue</a></li>
+				<li>cameras and lenses used in this issue</li>
+			</ul>
+		</div>
+	</div>
+	<!-- div class="redsquare">
+		<table>
+			<tr>
+				<td id="firstcol">
+					<h3>zine 001</h3>
+					<p>april 1, 2023</p>
+				</td>
+				<td id="secondcol">
+					<table width="100%">
+						<tr>
+							<td>Words</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>don’t come</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>easy</td>
+						</tr>
+					</table>
+				</td>
+				<td id="thirdcol">
+					<p>Looking through AI perceprion on my favourite lyrics.</p>
+				</td>
+			</tr>
+		</table>
+	</div -->
+
 	<div>
 		<p><img src="assets/image1.png" style="width: 100%; height: auto; border: 0;" alt="errer"></p>
 	</div>
