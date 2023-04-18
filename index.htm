@@ -29,7 +29,7 @@ body {
 	text-align: left;
 }
 
-h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td {
+h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, figcaption {
 	margin: 0;
 	padding: 0;
 }
@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td {
 
 #site-description {
 	padding: 16px 0 0;
+	text-transform: lowercase;
 }
 
 #social-links {
@@ -54,6 +55,55 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td {
 #social-links a {
 	display: inline-block;
 	margin-right: 0.5em;
+}
+
+#content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	gap: 20px 20px;
+}
+
+@media screen and (min-width : 768px) {
+	#content {
+		max-width: 75%;
+	}
+}
+
+.row {
+	width: 33.333%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border: 0;
+}
+
+figure {
+	position: relative;
+}
+
+figcaption {
+	position: absolute;
+	top: 18px;
+	left: 12px;
+	color: #fff;
+	width: 100%;
+	text-transform: lowercase;
+}
+
+.row a:link, .row a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.row a:hover, .row a:active {
+	color: #fff;
+	text-decoration: underline;
 }
 
 </style>
@@ -78,20 +128,20 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td {
 	<div id="content">
 		<div class="row">
 			<figure>
-				<img src="" alt="" class="section-preview">
-				<figcaption></figcaption>
+				<img src="assets/sections-previews/preview-zine-001.jpg" alt="" class="section-preview">
+				<figcaption><a href="issues/2023/04/Miek%97Zine%97No.01%972023%9604%9601(s-size).pdf">Zine 001</a></figcaption>
 			</figure>
 		</div>
 		<div class="row">
 			<figure>
-				<img src="" alt="" class="section-preview">
-				<figcaption></figcaption>
+				<img src="assets/sections-previews/preview-2023-spring.jpg" alt="" class="section-preview">
+				<figcaption><a href="specials/spring2023/">Spring 2023</a></figcaption>
 			</figure>
 		</div>
 		<div class="row">
 			<figure>
-				<img src="" alt="" class="section-preview">
-				<figcaption></figcaption>
+				<img src="assets/sections-previews/preview-gear.jpg" alt="" class="section-preview">
+				<figcaption><a href="/gear/">Gear</a></figcaption>
 			</figure>
 		</div>
 		<div class="row">
