@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+﻿@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
 
 body {
 	background: #F4EEE2;
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, f
 }
 
 .section-title span:after {
-	content: " �";
+	content: " ›";
 }
 
 #footer {
