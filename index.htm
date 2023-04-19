@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, f
 
 #header {
 	text-transform: lowercase;
-
 }
 
 #site-title h1 {
@@ -82,6 +81,12 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, f
 	margin: -4px -6px;
 	margin-right: calc(0.75em - 6px);
 	border: 0;
+}
+
+#footer {
+	text-transform: lowercase;
+	margin: 24px 0 104px;
+	font-size: 0.8em;
 }
 
 #content {
@@ -193,11 +198,23 @@ figcaption {
 
 	</div>
 
-	<div class="menu">
+	<!-- div id="menu">
 		<h3>Menu</h3>
 		
+	</div -->
+
+	<div id="footer">
+		<p>&copy;&nbsp;<span id="year"></span> Miek Semyonov. All right reserved.</p>
 	</div>
 
+
 </div>
+
+<script>
+	const date = new Date();
+	const year = date.getFullYear();
+	document.getElementById('year').innerHTML = year;
+</script>
+
 </body>
 </html>
