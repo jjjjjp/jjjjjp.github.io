@@ -124,11 +124,13 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, f
 
 .row-one {
 	width: calc(100% - 20px);
+	text-transform: lowercase;
 }
 
 @media screen and (max-width : 768px) {
 	.row-one {
 		width: calc(100% - 20px);
+		text-transform: lowercase;
 	}
 }
 
@@ -151,15 +153,14 @@ figcaption {
 	text-transform: lowercase;
 }
 
-.row a:link, .row a:visited {
+.row a:link, .row a:visited, .row-one a:link, .row-one a:visited {
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
 	border: 0;
 }
 
-.row a:hover, .row a:active {
-	color: #fff;
+.row a:hover, .row a:active, .row-one a:hover, .row-one a:active {
 	text-decoration: none;
 	border: 0;
 	display: inline-block;
@@ -167,6 +168,17 @@ figcaption {
 	background-color: #ceff63;
 	padding: 4px 6px;
 	margin: -4px -6px;
+}
+
+.row-one p.row-text a:link, .row-one p.row-text a:visited {
+	color: #000;
+	border-bottom: 1.5px solid #000;
+}
+
+.row-one p.row-text a:hover, .row-one p.row-text a:active {
+	color: #000;
+	border: 0;
+	margin: -4px -6px -2.5px;
 }
 
 a:link, a:visited {
