@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+
+body {
+	background: #F4EEE2;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', 'Arial', 'Helvetica', "Helvetica Neue", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 120%;
+}
+
+#wrapper {
+	width: calc(100% - 48px);
+	margin: 52px auto;
+	padding: 0;
+	text-align: left;
+}
+
+@media screen and (min-width : 768px) {
+	#wrapper {
+		width: calc(100% - 96px);
+		margin: 70px auto;
+	}
+}
+
+h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, figcaption {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	text-transform: lowercase;
+}
+
+#site-title h1 {
+	font-size: 2.5em;
+	font-weight: 900;
+	font-family: 'Inter', 'Arial', 'Helvetica', "Helvetica Neue", sans-serif;
+	font-style: normal;
+	line-height:100%;
+}
+
+#site-description {
+	padding: 18px 0 0;
+}
+
+
+#social-links {
+	padding: 10px 0 28px;
+}
+
+#social-links a {
+	display: inline-block;
+	margin-right: 0.75em;
+}
+
+#header * a:link, #header * a:visited {
+	text-decoration: none;
+	border-bottom: dotted 2px #000;
+	color: #000;
+}
+
+#header * a:hover, #header * a:active {
+	text-decoration: none;
+	color: #000;
+	background-color: #ceff63;
+	padding: 4px 6px;
+	margin: -4px -6px;
+	margin-right: calc(0.75em - 6px);
+	border: 0;
+}
+
+#footer {
+	text-transform: lowercase;
+	margin: 24px 0 104px;
+	font-size: 0.8em;
+}
+
+#content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	gap: 20px;
+}
+
+@media screen and (min-width : 768px) {
+	#content {
+		max-width: 75%;
+	}
+}
+
+.row {
+	width: calc(33% - 10px);
+}
+
+@media screen and (max-width : 768px) {
+	.row {
+		width: calc(50% - 10px);
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border: 0;
+}
+
+figure {
+	position: relative;
+}
+
+figcaption {
+	position: absolute;
+	top: 18px;
+	left: 20px;
+	color: #fff;
+	width: 100%;
+	text-transform: lowercase;
+}
+
+.row a:link, .row a:visited {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.row a:hover, .row a:active {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+	background-color: #ceff63;
+	padding: 4px 6px;
+	margin: -4px -6px;
+}
