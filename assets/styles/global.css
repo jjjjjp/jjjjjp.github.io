@@ -122,6 +122,16 @@ h1, h2, h3, h4, h5, p, li, ul, ol, dd, dt, dl, table, th, tr, td, figure, img, f
 	}
 }
 
+.row-one {
+	width: calc(100% - 20px);
+}
+
+@media screen and (max-width : 768px) {
+	.row-one {
+		width: calc(100% - 20px);
+	}
+}
+
 img {
 	width: 100%;
 	height: auto;
