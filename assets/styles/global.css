@@ -244,3 +244,7 @@ a:hover, a:active {
 	border: 0;
 	text-decoration: none;
 }
+
+.mono {
+	font-family: monospace;
+}
