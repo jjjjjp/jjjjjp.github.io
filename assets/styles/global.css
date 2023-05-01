@@ -245,6 +245,12 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-.mono {
-	font-family: monospace;
+.arrows {
+	display: none;
+}
+
+#arrow1, #arrow2, #arrow2, #arrow3, #arrow4 {
+  content: '\2197';
+  display: inline;
+  text-decoration: none;
 }
