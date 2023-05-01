@@ -237,3 +237,10 @@ a:hover, a:active {
 .gray {
 	color: #ccc;
 }
+
+#site-title h1 a:link, #site-title h1 a:visited, #site-title h1 a:hover, #site-title h1 a:active {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+}
