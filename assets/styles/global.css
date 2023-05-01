@@ -244,13 +244,3 @@ a:hover, a:active {
 	border: 0;
 	text-decoration: none;
 }
-
-.arrows {
-	display: none;
-}
-
-#arrow1, #arrow2, #arrow2, #arrow3, #arrow4 {
-  content: '\2197';
-  display: inline;
-  text-decoration: none;
-}
